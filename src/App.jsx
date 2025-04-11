@@ -3,6 +3,8 @@ import Categories from "./components/Categories"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Promotion from "./components/Promotion"
+import Sale from "./components/Sale"
+import Special from "./components/Special"
 
 function App() {
   
@@ -14,6 +16,8 @@ function App() {
     <Categories/>
     <Promotion/>
     <Store/>
+    <Sale/>
+    <Special/>
     </>
   )
 }
