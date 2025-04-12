@@ -13,6 +13,7 @@ const settings = {
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 1,
+  dotsClass: "slick-dots custom-dots",
   responsive: [
     {
       breakpoint: 1024,
@@ -31,13 +32,14 @@ const settings = {
 
 const Categories = () => {
   
+  
   return (
    
-      <div className="px-8 py-12 bg-white">
+      <div className="px-8 py-12 bg-white mb-10">
         <h2 className="text-4xl font-bold text-center mb-10">NEW DESIGN</h2>
-        <Slider {...settings}>
+        <Slider  {...settings} dotsClass="slick-dots custom-dots">
           {products.map((product, index) => (
-            <div key={index} className="px-3">
+            <div key={index} className="px-3 mb-16">
               <div className="relative  p-4  overflow-hidden group">
                 <img
                   src={product.image}

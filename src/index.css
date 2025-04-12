@@ -1,3 +1,62 @@
 @import "tailwindcss";
 @import "slick-carousel/slick/slick.css"; 
 @import "slick-carousel/slick/slick-theme.css";
+
+
+
+.custom-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 1.5rem;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background-color: #d1d5db;
+  opacity: 0.5;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ef4444;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Custom Slick dots styled like Swiper */
+.custom-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.custom-dots li {
+  margin: 0;
+}
+
+.custom-dots li button {
+  width: 9px;
+  height: 9px;
+  border-radius: 0px;
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  opacity: 0.5;
+  border: none;
+  padding:0;
+  transition: all 0.3s ease;
+}
+
+.custom-dots li.slick-active button {
+  background-color: #ef4444; /* Tailwind's red-500 */
+  opacity: 1;
+  transform: scale(1.2);
+}
+.slick-dots li button:before {
+  display: none !important;
+}
+

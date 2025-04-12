@@ -5,6 +5,9 @@ import Hero from "./components/Hero"
 import Promotion from "./components/Promotion"
 import Sale from "./components/Sale"
 import Special from "./components/Special"
+import Blogs from "./components/Blogs"
+import Features from "./components/Features"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -18,6 +21,9 @@ function App() {
     <Store/>
     <Sale/>
     <Special/>
+    <Blogs/>
+    <Features/>
+    <Footer/>
     </>
   )
 }

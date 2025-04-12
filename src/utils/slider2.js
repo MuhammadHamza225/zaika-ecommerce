@@ -35,20 +35,7 @@ const products = [
     oldPrice: 17,
     label: "Winter Sale",
   },
-  {
-    title: "Blue Denim For Gents",
-    image: "/images/cg1.png",
-    price: 15,
-    oldPrice: 17,
-    label: "Winter Sale",
-  },
-  {
-    title: "Blue Denim For Gents",
-    image: "/images/cg1.png",
-    price: 15,
-    oldPrice: 17,
-    label: "Winter Sale",
-  },
+  
   // Add more products here...
 ];
 
