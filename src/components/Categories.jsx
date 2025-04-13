@@ -1,12 +1,11 @@
 import React from 'react'
 import Slider from "react-slick";
 import { FaShoppingCart, FaHeart, FaEye } from "react-icons/fa";
-import products  from '../utils/slider2';
 import { LiaRetweetSolid } from "react-icons/lia";
 import { CiHeart } from "react-icons/ci";
 import { LiaEyeSolid } from "react-icons/lia";
 import { BsCart } from "react-icons/bs";
-
+import { useSelector } from 'react-redux';
 const settings = {
   dots: true,
   infinite: true,
@@ -31,6 +30,7 @@ const settings = {
 };
 
 const Categories = () => {
+   const products = useSelector((state) => state.products.items);
   
   
   return (

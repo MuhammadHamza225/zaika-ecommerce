@@ -8,23 +8,26 @@ import Special from "./components/Special"
 import Blogs from "./components/Blogs"
 import Features from "./components/Features"
 import Footer from "./components/Footer"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./components/pages/Home"
+import About from "./components/pages/About"
+import Blog from "./components/pages/Blog"
+import Contact from "./components/pages/Contact"
+
+
 
 function App() {
   
 
   return (
-    <>
-    <Header/>
-    <Hero/>
-    <Categories/>
-    <Promotion/>
-    <Store/>
-    <Sale/>
-    <Special/>
-    <Blogs/>
-    <Features/>
-    <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="about" element={<About/>}/>
+        <Route path="blog" element={<Blog/>}/>
+        <Route path="contact" element={<Contact/>}/>
+      </Routes>
+    </Router>
   )
 }
 

@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { LiaRetweetSolid } from "react-icons/lia";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { AiOutlineUser } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,24 +15,24 @@ const Header = () => {
           <img src={logo} alt="" />
         </div>
         <div className="text-[18px]">
-          <a className="px-6" href="">
+          <Link to='/' className="px-6" >
             Home
-          </a>
-          <a className="px-6" href="">
+          </Link>
+          <Link to='/about'className="px-6">
             About
-          </a>
+          </Link>
           <a className="px-6" href="">
             Products
           </a>
           <a className="px-6" href="">
             Pages
           </a>
-          <a className="px-6" href="">
+          <Link to='/blog' className="px-6">
             Blogs
-          </a>
-          <a className="px-6" href="">
+          </Link>
+          <Link to='/contact' className="px-6">
             Contact
-          </a>
+          </Link>
         </div>
         <div className="flex gap-x-5 text-[20px]">
           <span className="">
