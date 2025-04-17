@@ -13,6 +13,9 @@ import Home from "./components/pages/Home"
 import About from "./components/pages/About"
 import Blog from "./components/pages/Blog"
 import Contact from "./components/pages/Contact"
+import Terms from "./components/pages/Terms"
+import Privacy from "./components/pages/Privacy"
+import Faq from "./components/pages/Faq"
 
 
 
@@ -26,6 +29,9 @@ function App() {
         <Route path="about" element={<About/>}/>
         <Route path="blog" element={<Blog/>}/>
         <Route path="contact" element={<Contact/>}/>
+        <Route path="terms" element={<Terms/>}/>
+        <Route path="privacy" element={<Privacy/>}/>
+        <Route path="faq" element={<Faq/>}/>
       </Routes>
     </Router>
   )
