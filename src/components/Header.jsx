@@ -6,13 +6,11 @@ import { LiaRetweetSolid } from "react-icons/lia";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { AiOutlineUser } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import CartDropdown from "./CartDropdown";
 
 const Header = () => {
   const [isPageOpen, setIsPageOpen] = useState(false);
   const [isAccountOpen, setIsAccountOpen] = useState(false);
 
- 
   const pageTimeoutRef = useRef(null);
   const accountTimeOutRef = useRef(null);
 
@@ -64,13 +62,22 @@ const Header = () => {
             </button>
             {isPageOpen && (
               <div className="absolute top-full mt-3 w-52 bg-white shadow-lg border-white z-50 text-left text-gray-800 text-sm">
-                <Link to="/terms" className="block px-6 py-3 hover:bg-[#ff695c] border-b-1 border-gray-300">
+                <Link
+                  to="/terms"
+                  className="block px-6 py-3 hover:bg-[#ff695c] border-b-1 border-gray-300"
+                >
                   Terms & Conditions
                 </Link>
-                <Link to='/privacy' className="block px-6 py-3 hover:bg-[#ff695c] border-b-1 border-gray-300">
+                <Link
+                  to="/privacy"
+                  className="block px-6 py-3 hover:bg-[#ff695c] border-b-1 border-gray-300"
+                >
                   Privacy Policy
                 </Link>
-                <Link to='/faq' className="block px-6 py-3 hover:bg-[#ff695c] border-b-4 border-[#ff695c]">
+                <Link
+                  to="/faq"
+                  className="block px-6 py-3 hover:bg-[#ff695c] border-b-4 border-[#ff695c]"
+                >
                   FAQ
                 </Link>
               </div>
@@ -93,12 +100,10 @@ const Header = () => {
           <span>
             <CiHeart />
           </span>
-         
-          <button onClick={()=>setIsOpen(!isOpen)} className="relative text-pink-500">
+
+          <button>
             <LiaCartPlusSolid />
-            <span className="absolute -top-2 -right-2 bg-pink-500 text-white rounded-full text-xs px-1">0</span>
           </button>
-         
         </div>
         <div
           className="relative px-2"
@@ -128,3 +133,4 @@ const Header = () => {
 };
 
 export default Header;
+

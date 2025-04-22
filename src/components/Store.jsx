@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector,  } from "react-redux";
 import { LiaRetweetSolid } from "react-icons/lia";
 import { CiHeart } from "react-icons/ci";
 import { LiaEyeSolid } from "react-icons/lia";
@@ -85,5 +85,4 @@ const Store = () => {
     </div>
   );
 };
-
 export default Store;
